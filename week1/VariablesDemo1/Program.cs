@@ -51,34 +51,29 @@ static bool loop(int num)
         if (num % 2 != 0 && num < 60)
         {
             Console.WriteLine(num + " is odd and less than 60");
-            return anotherOne();
 
         }
         else if (num % 2 == 0 && num >= 2 && num <= 24)
         {
             Console.WriteLine(num + " is Even and less than 25");
-            return anotherOne();
         }
         else if (num % 2 == 0 && num >= 26 && num <= 60)
         {
             Console.WriteLine(num + " is Even and between 26 and 60 inclusive.");
-            return anotherOne();
         }
         else if (num % 2 == 0 && num > 60)
         {
             Console.WriteLine(num + " is Even and greater than 60");
-            return anotherOne();
         }
         else if (num % 2 != 0 && num > 60)
         {
             Console.WriteLine(num + " is Odd and greater than 60");
-            return anotherOne();
         }
         else
         {
             Console.WriteLine("Whoops, not a vaild number!");
-            return anotherOne();
         }
+        return anotherOne();
     }
     Console.WriteLine("Whoops, not a vaild number!!");
     return anotherOne();
@@ -90,9 +85,9 @@ static bool anotherOne()
 {
     Console.WriteLine("Would you like to play again? Answer yes or no.");
 
-    string[] answers = { "yes", "Yes", "YES" };
+    string[] answers = { "yes", "Yes", "YES", "yaass" };
     string decision = Console.ReadLine();
-    if (answers.Any(a => answers[0] == decision || answers[1] == decision || answers[2] == decision))
+    if (answers.Any(a => answers[0] == decision || answers[1] == decision || answers[2] == decision || answers[3] == decision))
     {
         return true;
     }
